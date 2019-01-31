@@ -1,19 +1,68 @@
 import React, { Component } from 'react'
-
-// import Stream from 'Stream.react'
-// import Collection from 'Collect.react'
-
 // import './App.css'
+
+function tick() {
+  const element = (
+    <div>
+      <h1>hello world</h1>
+      <h2>{new Date().toLocaleTimeString()}</h2>
+    </div>
+  )
+  return element
+}
 
 class App extends Component {
   render() {
-    return <Stream className="Stream" />
+    return (
+      <div>
+        <ShoppingList className="ShoppingList" />
+        <div>{tick()}</div>
+      </div>
+    )
   }
 }
 
-class Stream extends Component {
+class ShoppingList extends React.Component {
   render() {
-    return <h1>hello</h1>
+    return (
+      <div>
+        <h1>ShoppingList for {this.props.name}</h1>
+        <ul>
+          <Goods />
+        </ul>
+        <Send value="按钮" />
+        {/* <Board /> */}
+      </div>
+    )
+  }
+}
+
+class Goods extends React.Component {
+  render() {
+    return React.createElement('li', { className: 'goods' }, 'good')
+  }
+}
+
+class Send extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      value: '开启'
+    }
+  }
+
+  render() {
+    return (
+      <button
+        onClick={() => {
+          this.state.value === '开启'
+            ? this.setState({ value: '关闭' })
+            : this.setState({ value: '开启' })
+        }}
+      >
+        {this.state.value}
+      </button>
+    )
   }
 }
 
