@@ -1,5 +1,8 @@
 import React from 'react'
 import Lifecircle from './lifecircle.js'
+import { Button } from 'antd'
+import './index.scss'
+
 export default class Counter extends React.Component {
   constructor(props) {
     super(props)
@@ -21,13 +24,10 @@ export default class Counter extends React.Component {
   }
 
   render() {
-    let padding = {
-      padding: 50
-    }
     return (
-      <div style={padding}>
-        <button onClick={this.handleAdd}>点击</button>
-        <button onClick={this.handleClick}>点击</button>
+      <div className="p50">
+        <Button onClick={this.handleAdd}>点击</Button>
+        <Button onClick={this.handleClick}>点击</Button>
         <p>{this.state.count}</p>
         <Lifecircle name="jack" count={this.state.count} />
       </div>
