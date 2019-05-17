@@ -1,2 +1,125 @@
 {
+    // editor
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": "400",
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.letterSpacing": 0.2,
+    "editor.snippetSuggestions": "top",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.minimap.enabled": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    // file
+    "files.autoSave": "onFocusChange",
+    // window
+    "window.zoomLevel": -0.3,
+    // workbench
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1d1c1c",
+        "statusBar.noFolderBackground": "#0A0A0D",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "workbench.colorTheme": "Spacegray Ocean Dark",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.editor.enablePreview": false,
+    // teminal
+    "terminal.integrated.fontWeight": "100",
+    "terminal.integrated.fontWeightBold": "100",
+    "terminal.integrated.fontSize": 14,
+
+    // emmet
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascript",
+        "html": "html",
+        // "razor": "html",
+        "plaintext": "jade"
+    },
+    // prettier
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    // eslint
+    "eslint.autoFixOnSave": false,
+
+    // git
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.views.repositories.files.layout": "auto",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "git.autofetch": true,
+    "gitProjectManager.baseProjectsFolders": ["/home/Users/suoyue/project"],
+
+    // file
+    "files.autoSave": "onFocusChange",
+    // window
+    "window.zoomLevel": -0.3,
+    // workbench
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1d1c1c",
+        "statusBar.noFolderBackground": "#0A0A0D",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "workbench.colorTheme": "Spacegray Ocean Dark",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.editor.enablePreview": false,
+    // teminal
+    "terminal.integrated.fontWeight": "100",
+    "terminal.integrated.fontWeightBold": "100",
+    "terminal.integrated.fontSize": 14,
+
+    // emmet
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        // "javascript": "javascript",
+        "html": "html",
+        // "razor": "html",
+        "plaintext": "jade"
+    },
+    // prettier
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+    },
+
+    // "editor.formatOnSave": false,
+
+    // eslint
+    // "eslint.autoFixOnSave": true,
+
+    // git
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.views.repositories.files.layout": "auto",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "git.autofetch": true,
+    "gitProjectManager.baseProjectsFolders": ["/home/Users/suoyue/project"],
 }
+

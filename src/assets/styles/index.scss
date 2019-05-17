@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  .sidebar {
+    height: calc(100vh);
+    width: 256px;
+    // background: #f00;
+  }
+}
