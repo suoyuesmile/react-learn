@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Header from '../components/Header'
 import Todo from '../components/Todo'
 import TodoRedux from '../components/Todo/todoRedux'
+import TodoSaga from '../components/Todo/todoSaga'
+import TodoList from '../components/Todo/todoList'
 import TodoDetail from '../components/Todo/detail'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -24,6 +26,16 @@ export default class RouterApp extends Component {
           name: '计划2',
           path: '/todo2',
           component: TodoRedux
+        },
+        {
+          name: '计划3',
+          path: '/todo3',
+          component: TodoList
+        },
+        {
+          name: '计划4',
+          path: '/todo4',
+          component: TodoSaga
         },
         {
           name: '计划详情',

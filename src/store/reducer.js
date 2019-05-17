@@ -1,4 +1,9 @@
-import { CHNAGE_INPUT_VALUE, ADD_TODO_LIST, DEL_TODO_LIST } from './actionTypes'
+import {
+  CHNAGE_INPUT_VALUE,
+  ADD_TODO_LIST,
+  DEL_TODO_LIST,
+  INIT_DATA_LIST
+} from './actionTypes'
 
 const defaultState = {
   inputValue: '',
@@ -13,10 +18,12 @@ export default (state = defaultState, action) => {
       return newState
     case ADD_TODO_LIST:
       newState.list.push(newState.inputValue)
-      newState.inputValue = ''
       return newState
     case DEL_TODO_LIST:
       newState.list.splice(action.index, 1)
+      return newState
+    case INIT_DATA_LIST:
+      newState.list = action.data
       return newState
     default:
       return state
